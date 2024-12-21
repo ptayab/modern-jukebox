@@ -1,12 +1,12 @@
 from django.contrib import admin
 from django.urls import path, include
-from django.contrib.staticfiles_urlpatterns import staticfiles_urlpatterns
 from django.conf import settings
-from django.contrib.static.urls import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.contrib.staticfiles.urls import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('App.urls'))
+    path('', include('mjApp.urls'))
 ]
 
 urlpatterns+=staticfiles_urlpatterns()
