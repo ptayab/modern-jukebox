@@ -31,9 +31,10 @@ h3 {
     margin-top: 2%;
     right: 70%;
     border-radius: 0 0 10px 10px;
-    background: transparent linear-gradient(to bottom,rgba(0, 0, 0, 0.9) 50%,rgb(0, 0, 0) 70%) repeat scroll 0 0;
+    background: transparent linear-gradient(to bottom,rgba(195, 65, 179, 0.9), rgba(44, 2, 39, 0.9) 50%,rgb(0, 0, 0) 70%) repeat scroll 0 0;
     box-shadow: 1px 10px 20px 5px #222;
 }
+
 .cover {
     float: left;
     width: 100%;
@@ -78,27 +79,45 @@ h3 {
     float: left;
     position: relative;
 }
+
+.fa-step-backward {
+    color: rgba(167, 21, 150, 0.9);
+    padding-top: 20px;
+}
+
+.fa-step-forward {
+    color: rgba(167, 21, 150, 0.9);
+    padding-top: 20px;
+}
+
 .mejs__controls .mejs__playpause-button {
     position: absolute !important;
-    right: 8%;
+    right: 45%;
     bottom: 95%;
-    width: 40px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(167, 21, 150, 0.9);
 }
+
 .mejs__controls .mejs__playpause-button button {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 0;
     border: 0;
     font-family: FontAwesome;
-    font-size: 23px;
-    color: #5bbb95;
+    font-size: 20px;
+    color: rgba(167, 21, 150, 0.9);
     background: transparent;
-    padding: 0;
     margin: 0;
 }
 .mejs__controls .mejs__play button:before{
     content:"\f04b";
+    
 }
 .mejs__controls .mejs__pause button:before{
     content:"\f04c";
@@ -111,7 +130,7 @@ h3 {
     border: 0;
     font-family: FontAwesome;
     font-size: 20px;
-    color: #5bbb95;
+    color: #343d2a;
     background: transparent;
     margin: 0;
     padding: 0;
@@ -189,7 +208,7 @@ h3 {
     border-left: 6px solid transparent;
 }
 .mejs__controls .mejs__time-rail .mejs__time-current {
-    background: #5BBB95 none repeat scroll 0 0;
+    background: rgba(167, 21, 150, 0.9) none repeat scroll 0 0;
 }
 .mejs__controls .mejs__time-handle {
     display: none;
@@ -227,32 +246,33 @@ h3 {
     background: #fff;
 }
 
-
-/* lyrics section */
-
-.right-section {
-float: right; /* Float the right-section to the right */
-width: 69%; /* Set the width of the right-section (adjust as needed) */
-height: 90%;
-padding: 20px; /* Add padding for spacing */
-box-sizing: border-box; /* Include padding and border in the element's total width and height */
-background: transparent linear-gradient(to bottom,rgba(4, 3, 3, 0.9) 50%,rgb(0, 0, 0) 70%) repeat scroll 0 0;
-margin-top: 2%;
-margin-right:0.6% ;
-box-shadow: 1px 10px 20px 5px #222;;
+.fun-fact-section {
+    float: right;
+    width: 69%;
+    height: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: transparent linear-gradient(to bottom,rgba(4, 3, 3, 0.9) 50%,rgb(0, 0, 0) 70%) repeat scroll 0 0;
+    margin-top: 2%;
+    margin-right:0.6%;
 }
-
-.lyrics-container {
-padding: 20px; /* Add padding for lyrics container */
+  
+.facts-container {
+    padding: 100px;
 }
-
-.lyrics {
-font-size: 600%;
-font-family: "Sofia", sans-serif; /* Specify the desired font family */
-color: #88ff00; /* Set the text color */
-line-height: 1.6; /* Set the line height for better readability */
+  
+.fact-title {
+    font-family: 'Sofia', sans-serif;
+    font-size: 200%;
+    color: rgba(167, 21, 150, 0.9);
+    margin-bottom: 10px;
+    padding: 0px 5px;
 }
-
-#song-lyrics {
-margin: 0px; /* Remove default margin for the lyrics paragraph */
-}
+  
+.facts {
+    font-family: Arial, sans-serif;
+    font-size: 300%;
+    color: #d3d3d3;
+    line-height: 1.6;
+    padding: 0px 20px;
+}  
