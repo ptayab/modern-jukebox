@@ -19,5 +19,22 @@
     </script>
 
     <script src="{% static './script.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById('fc-media');
+            const funFactContainers = document.getElementById('facts');
+            let currentFactIndex = 0;
+
+            const funFacts = JSON.parse(document.getElementById('facts').getAttribute('data-facts'));
+
+            function changeFunFact() {
+                funFactContainers.innerText = funFacts[currentFactIndex].fun_fact;
+                currentFactIndex++;
+            }
+
+            setInterval(changeFunFact, 15000);
+        });
+    </script>
+
 </body>
 </html>

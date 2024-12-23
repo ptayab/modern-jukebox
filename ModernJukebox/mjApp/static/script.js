@@ -31,7 +31,8 @@ var audio = {
                             'progress', 
                             'volume', 
                             'tracks', 
-                            'fullscreen'
+                            'fullscreen',
+                            'loop'
                         ],
                         alwaysShowControls: true, 
                         timeAndDurationSeparator: '<span></span>', 
